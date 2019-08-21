@@ -1,4 +1,4 @@
-docker run \
+sudo docker run \
     --name postgres \
     -e POSTGRES_USER=erickwendel \
     -e POSTGRES_PASSWORD=minhasenhasecreta \
@@ -7,7 +7,7 @@ docker run \
     -d \
     postgres
 
-docker run \
+sudo docker run \
     --name adminer \
     -p 8080:8080 \
     --link postgres:postgres \
